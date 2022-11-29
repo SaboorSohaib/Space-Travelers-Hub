@@ -4,6 +4,23 @@
   gap: 20px;
 }
 
+.dragon-image {
+  width: 50px;
+}
+
+.dragon-details > * {
+  margin: 10px;
+}
+
 .dragon-name {
   font-size: 20px;
+}
+
+.dragon-button {
+  color: #fff;
+  background-color: #4e4eff;
+  padding: 15px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
