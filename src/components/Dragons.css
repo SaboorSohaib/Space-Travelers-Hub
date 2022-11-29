@@ -1,0 +1,9 @@
+.dragon {
+  display: flex;
+  align-items: initial;
+  gap: 20px;
+}
+
+.dragon-name {
+  font-size: 20px;
+}

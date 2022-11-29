@@ -5,7 +5,7 @@ import './App.css';
 import MyProfile from './components/myProfile';
 import Missoins from './components/missoins';
 import Rockets from './components/rockets';
-import Dragons from './components/dragons';
+import Dragons from './components/Dragons';
 
 function App() {
   return (
