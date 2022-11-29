@@ -34,9 +34,10 @@
 
 .navigation a {
   text-decoration: none;
-  color: #0000ff;
+  color: #00f;
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover,
+.navigation a:active {
   color: #0000b4;
 }
