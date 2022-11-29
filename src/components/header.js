@@ -11,6 +11,7 @@ const Header = () => (
     <nav className="navigation">
       <NavLink to="/">Rockets</NavLink>
       <NavLink to="/missoins">Missoins</NavLink>
+      <NavLink to="/dragons">Dragons</NavLink>
       <span className="line" />
       <NavLink to="/myProfile">MyProfile</NavLink>
     </nav>
