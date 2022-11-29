@@ -1,14 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import './App.css';
 import MyProfile from './components/myProfile';
+import Missoins from './components/missoins';
+import Rockets from './components/rockets';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <Header />
-      <MyProfile />
-    </div>
+      <Routes>
+        <Route path="/" element={<Rockets />} />
+        <Route path="/missoins" element={<Missoins />} />
+        <Route path="/myProfile" element={<MyProfile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
