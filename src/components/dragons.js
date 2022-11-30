@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Dragon from './Dragon';
 import './Dragons.css';
@@ -31,6 +30,5 @@ function Dragons() {
     </div>
   );
 }
-
 
 export default Dragons;
