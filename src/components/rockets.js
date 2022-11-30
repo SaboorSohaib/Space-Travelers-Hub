@@ -8,7 +8,7 @@ const Rockets = (item) => {
       <div>
         <img src={flickr_image} className="rocket-img" alt="Rocket" />
       </div>
-      <div>
+      <div className="rocket-info">
         <h3>{rocket_name}</h3>
         <p>{description}</p>
         <button className="rocket-btn" type="button">Reserve Rocket</button>
