@@ -5,7 +5,8 @@ import { fetchReockets } from '../redux/rockets/rockets';
 import Rockets from './rockets';
 
 const ShowRockets = () => {
-  const { rockets, loading } = useSelector(((state) => state.rocketReducer));
+  const { rockets, loading } = useSelector(((state) => state.rocket));
+  console.log(rockets);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchReockets());

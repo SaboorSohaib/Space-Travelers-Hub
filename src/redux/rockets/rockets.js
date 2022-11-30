@@ -1,14 +1,15 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
+const ADDROCKETS = 'react-group-project/redux/rockets/rockets';
 const URL = 'https://api.spacexdata.com/v3/rockets';
 
 export const fetchReockets = createAsyncThunk(
-  'ADDROCKETS',
+  ADDROCKETS,
   async () => fetch(URL).then((res) => res.json()),
 );
 const rocketSlice = createSlice(({
-  name: 'Rockets',
+  name: 'rockets',
   initialState: {
     rockets: [],
     loading: false,
