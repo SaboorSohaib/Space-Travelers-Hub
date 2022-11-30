@@ -41,3 +41,16 @@
 .navigation a:active {
   color: #0000b4;
 }
+
+/* Rockets Styling */
+
+.rocket-container {
+  display: flex;
+  gap: 20px;
+  margin-left: 5px;
+}
+
+.rocket-img {
+  width: 200px;
+  height: 200px;
+}

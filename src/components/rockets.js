@@ -2,12 +2,11 @@
 import React from 'react';
 
 const Rockets = (item) => {
-  const { flickr_images, rocket_name, description } = item;
-  console.log(item);
+  const { flickr_image, rocket_name, description } = item;
   return (
-    <div>
+    <div className="rocket-container">
       <div>
-        <img src={flickr_images} className="rocket-img" alt="Rocket" />
+        <img src={flickr_image} className="rocket-img" alt="Rocket" />
       </div>
       <div>
         <h3>{rocket_name}</h3>

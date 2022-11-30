@@ -3,10 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 // import PropTypes from 'prop-types';
 import { fetchReockets } from '../redux/rockets/rockets';
 import Rockets from './rockets';
+import '../App.css';
 
 function ShowRockets() {
   const { rockets, loading } = useSelector(((state) => state.rocket));
-  console.log(rockets);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchReockets());
