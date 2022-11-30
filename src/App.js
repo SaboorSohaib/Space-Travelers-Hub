@@ -4,7 +4,7 @@ import Header from './components/header';
 import './App.css';
 import MyProfile from './components/myProfile';
 import Missoins from './components/missoins';
-import Rockets from './components/rockets';
+import ShowRockets from './components/showRockets';
 import Dragons from './components/dragons';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Rockets />} />
+        <Route path="/" element={<ShowRockets />} />
         <Route path="/missoins" element={<Missoins />} />
         <Route path="/dragons" element={<Dragons />} />
         <Route path="/myProfile" element={<MyProfile />} />
