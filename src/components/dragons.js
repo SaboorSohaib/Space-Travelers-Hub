@@ -5,15 +5,14 @@ import { getAllDragons } from '../redux/dragons/dragons';
 import './Dragons.css';
 
 function Dragons() {
-  const dragons = useSelector((state) => state.dragons);
-
   const dispatch = useDispatch();
+  const dragons = useSelector((state) => state.dragons);
 
   useEffect(() => {
     if (dragons.length === 0) {
       dispatch(getAllDragons());
     }
-  }, [dispatch]);
+  }, []);
 
   return (
     <div>
@@ -25,7 +24,7 @@ function Dragons() {
                 id={dragon.id}
                 description={dragon.description}
                 name={dragon.name}
-                image={dragon.flickr_images[0]}
+                image={dragon.flickr_images}
               />
             </li>
           ))

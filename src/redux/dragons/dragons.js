@@ -1,4 +1,5 @@
 import axios from 'axios';
+import produce from 'immer';
 
 const url = 'https://api.spacexdata.com/v3/dragons';
 const initialState = [];
@@ -6,13 +7,7 @@ const initialState = [];
 const fetchDragons = async () => {
   const response = await axios.get(url);
   const dragonsData = response.data;
-  const dragons = Object.keys(dragonsData).map((key) => ({
-    id: dragonsData[key].id,
-    name: dragonsData[key].name,
-    description: dragonsData[key].description,
-    image: dragonsData[key].flickr_images[0],
-  }));
-  return dragons;
+  return dragonsData;
 };
 
 const GET_DRAGONS = 'GET_DRAGONS';
@@ -22,18 +17,30 @@ const getDragons = (payload) => ({
   payload,
 });
 
-const dragonsReducer = (state = initialState, action) => {
-  switch (action.type) {
+const dragonsReducer = (state = initialState, { type, payload }) => {
+  let newState = [];
+  switch (type) {
     case GET_DRAGONS:
-      return action.paylaod;
+      newState = produce(state, (draftState) => Object.keys(payload).forEach((key) => {
+        draftState.push({
+          id: payload[key].id,
+          name: payload[key].name,
+          description: payload[key].description,
+          flickr_images: payload[key].flickr_images[0],
+          reserved: false,
+        });
+      }));
+      return newState;
     default:
       return state;
   }
 };
 
-export const getAllDragons = () => async (dispatch) => {
-  const allDragons = await fetchDragons();
-  dispatch(getDragons(allDragons));
-};
+export function getAllDragons() {
+  return async function (dispatch) {
+    const allDragons = await fetchDragons();
+    (dispatch(getDragons(allDragons)));
+  };
+}
 
 export default dragonsReducer;
