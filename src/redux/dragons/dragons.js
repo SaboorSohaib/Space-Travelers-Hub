@@ -11,9 +11,15 @@ const fetchDragons = async () => {
 };
 
 const GET_DRAGONS = 'GET_DRAGONS';
+const BOOK_DRAGON = 'BOOK_DRAGON';
 
 const getDragons = (payload) => ({
   type: GET_DRAGONS,
+  payload,
+});
+
+export const bookDragon= (payload) => ({
+  type: BOOK_DRAGON,
   payload,
 });
 
@@ -31,6 +37,13 @@ const dragonsReducer = (state = initialState, { type, payload }) => {
         });
       }));
       return newState;
+    case BOOK_DRAGON:
+      newState = state.map(dragon => {
+        if(dragon.id !== action.payload) 
+            return dragon;
+        return { ...dragon, reserved: true };
+    });
+    
     default:
       return state;
   }
