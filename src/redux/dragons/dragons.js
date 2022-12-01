@@ -27,7 +27,7 @@ export const bookDragon = (payload) => ({
 export const cancelBooking = (payload) => ({
   type: CANCEL_BOOKING,
   payload,
-})
+});
 
 const dragonsReducer = (state = initialState, { type, payload }) => {
   let newState = [];
