@@ -16,14 +16,6 @@ const Rockets = (item) => {
       </div>
       <div className="rocket-info">
         <h3>{rocket_name}</h3>
-        <div
-          className="para-span"
-          style={{
-            display: reserved ? 'flex' : 'block',
-            flexDirection: reserved ? 'column' : 'row',
-            gap: reserved ? '5px' : '0',
-          }}
-        >
           <p>
             <span
               className="reserve-span"
@@ -39,7 +31,6 @@ const Rockets = (item) => {
             </span>
             {description}
           </p>
-        </div>
         <button
           style={{
             backgroundColor: reserved ? 'gray' : '#4e4eff',
