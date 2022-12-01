@@ -18,7 +18,7 @@ const getDragons = (payload) => ({
   payload,
 });
 
-export const bookDragon= (payload) => ({
+export const bookDragon = (payload) => ({
   type: BOOK_DRAGON,
   payload,
 });
@@ -38,12 +38,11 @@ const dragonsReducer = (state = initialState, { type, payload }) => {
       }));
       return newState;
     case BOOK_DRAGON:
-      newState = state.map(dragon => {
-        if(dragon.id !== action.payload) 
-            return dragon;
-        return { ...dragon, reserved: true };
-    });
-    
+      newState = state.map((dragon) => {
+        if (dragon.id === payload) return { ...dragon, reserved: true };
+        return dragon;
+      });
+      return newState;
     default:
       return state;
   }
