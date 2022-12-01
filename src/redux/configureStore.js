@@ -1,5 +1,5 @@
 import { applyMiddleware, configureStore } from '@reduxjs/toolkit';
-//import logger from 'redux-logger';
+// import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import dragonsReducer from './dragons/dragons';
 import rocketReducer from './rockets/rockets';
