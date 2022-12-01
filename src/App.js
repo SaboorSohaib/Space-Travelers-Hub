@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import './App.css';
 import MyProfile from './components/myProfile';
-import Missoins from './components/missoins';
+import Mission from './components/missions';
 import Rockets from './components/rockets';
 import Dragons from './components/dragons';
 
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Rockets />} />
-        <Route path="/missoins" element={<Missoins />} />
+        <Route path="/missions" element={<Mission />} />
         <Route path="/dragons" element={<Dragons />} />
         <Route path="/myProfile" element={<MyProfile />} />
       </Routes>

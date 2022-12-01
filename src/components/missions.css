@@ -1,0 +1,16 @@
+.missionWrapper {
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.missionWrapper,
+.missionRow,
+.missionTable,
+.missionRows {
+  border: 1px solid #e2e5e9;
+  border-collapse: collapse;
+}
+
+.missionTable {
+  padding: 0.8rem;
+}

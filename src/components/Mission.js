@@ -1,28 +1,24 @@
-/* eslint-disable camelcase */
+/* eslint-disable react/prop-types */
 
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import styles from './mission.css';
 
-const Mission = (item) => {
-  const {
-    mission_id, mission_name, description, status,
-  } = item;
+const MissionFrame = (props) => {
+  const { name, description } = props;
+
   return (
-    <div>
-      <span>{mission_id}</span>
-      <h4>{mission_name}</h4>
-      <p>{description}</p>
-      <span>{status}</span>
-      <div>
-        <button type="submit">Join Mission</button>
-        <br />
-      </div>
-    </div>
+    <>
+      <td className={styles.nameData}>{ name }</td>
+      <td className={styles.Description}>{ description }</td>
+      <td className={styles.Member}><span>Not A Member</span></td>
+      <td className={styles.joinMission}><button type="button">Join Mission</button></td>
+    </>
   );
 };
+MissionFrame.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
-// Mission.propTypes = {
-//   missionData: PropTypes.shape.isRequired,
-// };
-
-export default Mission;
+export default MissionFrame;

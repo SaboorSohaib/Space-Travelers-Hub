@@ -1,0 +1,26 @@
+td {
+  border: 1px solid #e2e5e9;
+  border-collapse: collapse;
+}
+
+.nameData {
+  font-weight: bold;
+  font-size: 20px;
+  width: 15%;
+  padding: 0.5rem;
+}
+
+.Member {
+  width: 12%;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.joinMission {
+  width: 12%;
+  text-align: center;
+}
+
+.Description {
+  padding: 0.5rem;
+}
