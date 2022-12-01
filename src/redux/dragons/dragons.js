@@ -12,6 +12,7 @@ const fetchDragons = async () => {
 
 const GET_DRAGONS = 'GET_DRAGONS';
 const BOOK_DRAGON = 'BOOK_DRAGON';
+const CANCEL_BOOKING = 'CANCEL_BOOKING';
 
 const getDragons = (payload) => ({
   type: GET_DRAGONS,
@@ -22,6 +23,11 @@ export const bookDragon = (payload) => ({
   type: BOOK_DRAGON,
   payload,
 });
+
+export const cancelBooking = (payload) => ({
+  type: CANCEL_BOOKING,
+  payload,
+})
 
 const dragonsReducer = (state = initialState, { type, payload }) => {
   let newState = [];
@@ -40,6 +46,12 @@ const dragonsReducer = (state = initialState, { type, payload }) => {
     case BOOK_DRAGON:
       newState = state.map((dragon) => {
         if (dragon.id === payload) return { ...dragon, reserved: true };
+        return dragon;
+      });
+      return newState;
+    case CANCEL_BOOKING:
+      newState = state.map((dragon) => {
+        if (dragon.id === payload) return { ...dragon, reserved: false };
         return dragon;
       });
       return newState;
