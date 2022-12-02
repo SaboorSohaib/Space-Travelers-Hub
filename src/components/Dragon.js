@@ -1,19 +1,18 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { bookDragon, cancelBooking } from '../redux/dragons/dragons';
+import { /* bookDragon, */cancelBooking } from '../redux/dragons/dragons';
 
 function Dragon(props) {
   const dragon = props;
   const dispatch = useDispatch();
 
-  const bookADragon = (id) => {
+  /*  const bookADragon = (id) => {
     dispatch(bookDragon(id));
     console.log(id);
-  };
+  }; */
 
   const cancelDragonBooking = (id) => {
     dispatch(cancelBooking(id));
-    console.log(id);
   };
 
   return (
@@ -34,7 +33,7 @@ function Dragon(props) {
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 export default Dragon;

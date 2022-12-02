@@ -14,8 +14,8 @@ function Dragons() {
       if (dragons.length === 0) {
         dispatch(getAllDragons());
       }
-    } 
-    return () => effectRan.current = true;
+    }
+    effectRan.current = true;
   }, []);
 
   return (
