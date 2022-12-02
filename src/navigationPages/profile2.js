@@ -19,7 +19,7 @@ const Profile = () => {
         ))}
       </Col>
     </div>
-
+// div
   );
 };
 
