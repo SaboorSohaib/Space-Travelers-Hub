@@ -1,5 +1,6 @@
 .dragons-container > * {
   margin-bottom: 25px;
+  list-style: none;
 }
 
 .dragon {
@@ -27,18 +28,19 @@
 
 .dragon-button {
   color: #fff;
-  background-color: #4e4eff;
+  background-color: #1083ff;
   padding: 15px;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .reserved-btn {
   padding: 5px 10px;
   color: #fff;
   background-color: #24a0b6;
-  font-weight: 800;
+  font-weight: 600;
   border: 0;
   border-radius: 5px;
   margin-right: 10px;
@@ -52,4 +54,30 @@
   font-size: 20px;
   padding: 10px;
   cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  gap: 15px;
+}
+
+.reserved-dragons {
+  min-width: 400px;
+}
+
+.dragons-cont {
+  border: #c4c4c4 2px solid;
+  border-radius: 8px;
+}
+
+.dragons-tit {
+  padding: 10px;
+}
+
+.dragon-n {
+  padding: 15px;
+  border-bottom: #c4c4c4 1px solid;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 700;
 }

@@ -6,7 +6,7 @@ import './index.css';
 import Myprofile from './components/myProfile';
 import Mission from './navigationPages/missions';
 import ShowRockets from './components/showRockets';
-import Dragons from './components/dragons';
+import Dragons from './components/dragons/dragons';
 
 const App = () => (
   <Router>

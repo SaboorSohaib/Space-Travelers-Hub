@@ -14,7 +14,7 @@ const GET_DRAGONS = 'GET_DRAGONS';
 const BOOK_DRAGON = 'BOOK_DRAGON';
 const CANCEL_BOOKING = 'CANCEL_BOOKING';
 
-const getDragons = (payload) => ({
+export const getDragons = (payload) => ({
   type: GET_DRAGONS,
   payload,
 });
