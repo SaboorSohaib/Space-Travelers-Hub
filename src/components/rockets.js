@@ -20,7 +20,7 @@ const Rockets = (item) => {
           <span
             className="reserve-span"
             style={{
-              backgroundColor: reserved ? ' #4e4eff' : 'gray',
+              backgroundColor: reserved ? ' green' : 'gray',
               color: reserved ? '#fff' : '#000',
               padding: reserved ? '3px' : '0',
               marginRight: reserved ? '11px' : '0',
@@ -33,7 +33,7 @@ const Rockets = (item) => {
         </p>
         <button
           style={{
-            backgroundColor: reserved ? 'gray' : '#4e4eff',
+            backgroundColor: reserved ? 'red' : '#4e4eff',
           }}
           className="rocket-btn"
           type="button"
