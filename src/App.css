@@ -32,6 +32,7 @@
 
 .line {
   width: 0.125rem;
+  margin-right: 30px;
   height: 1.5rem;
   border: solid 1px #929292;
 }
@@ -44,4 +45,14 @@
 .navigation a:hover,
 .navigation a:active {
   color: #0000b4;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.navbar-item {
+  list-style: none;
 }

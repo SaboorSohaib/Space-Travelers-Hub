@@ -24,4 +24,3 @@ describe('Rockets', () => {
     expect(showRockets).toMatchSnapshot();
   });
 });
-
