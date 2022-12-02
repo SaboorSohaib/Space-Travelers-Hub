@@ -27,3 +27,18 @@
   width: 150px;
   margin-top: 20px;
 }
+
+.reserved-rockets {
+  width: 600px;
+  margin-left: 10px;
+}
+
+.rockets-title {
+  padding: 10px;
+}
+
+.rockets {
+  padding: 10px;
+  border: 1px solid #999;
+  font-size: 20px;
+}
