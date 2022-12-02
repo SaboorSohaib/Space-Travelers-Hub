@@ -14,7 +14,7 @@ const Missions = () => {
   }, []);
 
   return (
-    <Row className="ms-2 ">
+    <Row className="ms-2">
       <Col className="col-3">
         <h2>Mission</h2>
       </Col>
