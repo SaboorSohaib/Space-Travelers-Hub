@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col } from 'react-bootstrap';
-import { allMissions } from '../../redux/missions/mission.redux';
+import { allMissions } from '../redux/missions/mission.redux';
 import Mission from '../components/mission';
 
 const Missions = () => {
