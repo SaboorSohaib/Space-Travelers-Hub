@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
+import { render } from '@testing-library/react';
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import Dragon from "../components/dragons/Dragon";
-import Dragons from "../components/dragons/dragons";
-import { bookDragon, cancelBooking, getDragons } from "../redux/dragons/dragons";
+import Dragon from '../components/dragons/Dragon';
+import Dragons from '../components/dragons/dragons';
+import { bookDragon, cancelBooking, getDragons } from '../redux/dragons/dragons';
 
 describe('Dragons', () => {
   it('Dragon component is rendered correctly', () => {
