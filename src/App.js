@@ -1,24 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import './App.css';
+import './index.css';
 import MyProfile from './components/myProfile';
-import Missoins from './components/missoins';
+import Mission from './navigationPages/missions';
 import ShowRockets from './components/showRockets';
 import Dragons from './components/dragons';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<ShowRockets />} />
-        <Route path="/missoins" element={<Missoins />} />
-        <Route path="/dragons" element={<Dragons />} />
-        <Route path="/myProfile" element={<MyProfile />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+const App = () => (
+  <Router>
+    <Header />
+    <Routes>
+      <Route path="/" element={<ShowRockets />} />
+      <Route path="/mission" element={<Mission />} />
+      <Route path="/dragons" element={<Dragons />} />
+      <Route path="/myProfile" element={<MyProfile />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
