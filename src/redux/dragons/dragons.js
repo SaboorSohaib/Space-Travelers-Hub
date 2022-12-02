@@ -51,7 +51,7 @@ const dragonsReducer = (state = initialState, { type, payload }) => {
       return newState;
     case CANCEL_BOOKING:
       newState = state.map((dragon) => {
-        if (dragon.id === payload) return { ...dragon, reserved: false };
+        if (dragon.id === id) return { ...dragon, reserved: false };
         return dragon;
       });
       return newState;
