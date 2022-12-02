@@ -1,3 +1,7 @@
+.dragons-container > * {
+  margin-bottom: 25px;
+}
+
 .dragon {
   display: flex;
   align-items: initial;
@@ -5,15 +9,20 @@
 }
 
 .dragon-image {
-  width: 50px;
+  width: 20%;
+  height: 20%;
 }
 
 .dragon-details > * {
-  margin: 10px;
+  margin-bottom: 15px;
 }
 
 .dragon-name {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.dragon-description {
+  font-size: 15px;
 }
 
 .dragon-button {
@@ -22,5 +31,25 @@
   padding: 15px;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserved-btn {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #24a0b6;
+  font-weight: 800;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cancel-dragon-button {
+  color: #8e8e8e;
+  background-color: #fff;
+  border: #717171 2px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
   cursor: pointer;
 }

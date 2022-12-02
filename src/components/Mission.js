@@ -1,12 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import './mission.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   Button, Col, Row, Alert,
 } from 'react-bootstrap';
 import { joinMission, leaveMission } from '../redux/missions/mission.redux';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './mission.css';
 
 const Mission = ({
   missionName, description, reserved, missionId,
