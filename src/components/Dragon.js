@@ -32,7 +32,7 @@ function Dragon(props) {
         </button>
       </div>
     </div>
-    ) : (
+  ) : (
     <div className="dragon">
       <img src={dragon.image} alt="Dragon" className="dragon-image" />
       <div className="dragon-details">
@@ -46,7 +46,8 @@ function Dragon(props) {
           Reserve Dragon
         </button>
       </div>
-    </div> );
-  }
+    </div>
+  );
+}
 
 export default Dragon;
