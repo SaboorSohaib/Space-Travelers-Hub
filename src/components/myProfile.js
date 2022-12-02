@@ -31,22 +31,17 @@ function Myprofile() {
   }, []);
 
   return (
-    <div className="main-container">
- reserve-mission
-      <div className="profile-section-conatiner">
-        <div className="reserved-rockets">
-          <h3 className="rockets-title">My Rockets</h3>
-          <div className="rockets">{rocketsToShow}</div>
-        </div>
-        <div className="reserved-rockets">
-          <h3 className="rockets-title">My Missions</h3>
-          <div className="rockets">{missionToShow}</div>
-        </div>
+    <div className="profile-section-conatiner">
+      <div className="reserved-rockets">
+        <h3 className="rockets-title">My Missions</h3>
+        <div className="rockets">{missionToShow}</div>
+      </div>
 
       <div className="reserved-rockets">
         <h3 className="rockets-title">My Rockets</h3>
         <div className="rockets">{rocketsToShow}</div>
       </div>
+
       <div className="reserved-dragons">
         <h3 className="dragons-tit">My Dragons</h3>
         <ul className="dragons-cont">
@@ -60,7 +55,9 @@ function Myprofile() {
           ))}
         </ul>
       </div>
+
     </div>
+
   );
 }
 
