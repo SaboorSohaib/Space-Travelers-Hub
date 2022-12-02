@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { bookDragon, cancelBooking } from '../redux/dragons/dragons';
+import { bookDragon, cancelBooking } from '../../redux/dragons/dragons';
 
 function Dragon(props) {
   const dragon = props;

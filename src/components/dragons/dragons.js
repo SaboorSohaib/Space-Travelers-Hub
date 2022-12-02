@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Dragon from './Dragon';
-import { getAllDragons } from '../redux/dragons/dragons';
+import { getAllDragons } from '../../redux/dragons/dragons';
 import './Dragons.css';
 
 function Dragons() {

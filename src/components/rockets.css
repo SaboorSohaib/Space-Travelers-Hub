@@ -38,7 +38,14 @@
 }
 
 .rockets {
-  padding: 10px;
-  border: 1px solid #999;
+  border: #c4c4c4 2px solid;
+  border-radius: 8px;
   font-size: 20px;
+}
+
+.rockets > * {
+  padding: 15px;
+  border-bottom: #c4c4c4 1px solid;
+  font-size: 18px;
+  font-weight: 700;
 }

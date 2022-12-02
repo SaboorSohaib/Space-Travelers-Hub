@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should renders the  Component correctly 1`] = `
+<div
+  className="rocket-container"
+>
+  <div>
+    <img
+      alt="Rocket"
+      className="rocket-img"
+    />
+  </div>
+  <div
+    className="rocket-info"
+  >
+    <h3 />
+    <p>
+      <span
+        className="reserve-span"
+        style={
+          Object {
+            "backgroundColor": "gray",
+            "borderRadius": "0",
+            "color": "#000",
+            "marginRight": "0",
+            "padding": "0",
+          }
+        }
+      />
+    </p>
+    <button
+      className="rocket-btn"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#4e4eff",
+        }
+      }
+      type="button"
+    >
+      Reserve Rocket
+    </button>
+  </div>
+</div>
+`;
