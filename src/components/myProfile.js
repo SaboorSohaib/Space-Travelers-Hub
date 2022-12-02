@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllDragons } from '../redux/dragons/dragons';
 import ProfileSection from './profileSection';
 import './rockets.css';
+import './dragons/Dragons.css';
 
 function Myprofile() {
   const dispatch = useDispatch();
@@ -29,13 +30,13 @@ function Myprofile() {
         <h3 className="rockets-title">My Rockets</h3>
         <div className="rockets">{rocketsToShow}</div>
       </div>
-      <div className="resered-dragons">
-        <h3 className="dragons-title">My Dragons</h3>
+      <div className="reserved-dragons">
+        <h3 className="dragons-tit">My Dragons</h3>
         <ul className="dragons-cont">
           {dragons.filter((dragon) => dragon.reserved === true).map((dragon) => (
             <li
               key={dragon.id}
-              className="dragon"
+              className="dragon-n"
             >
               {dragon.name}
             </li>
