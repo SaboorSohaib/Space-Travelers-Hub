@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllDragons } from '../redux/dragons/dragons';
 import ProfileSection from './profileSection';
-import './profile.css';
 import './rockets.css';
 import './dragons/Dragons.css';
 
