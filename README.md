@@ -35,33 +35,34 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Travel Hub ](#-space-travel-hub-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Space Travel Hub <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This is space Travel Hub website where you can reserver rocktets, missions, and dragonsa and leave them.
 
-**[your_project__name]** is a...
+**Space Travel Hub** is a single page react and redux application.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,14 +80,14 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
@@ -96,9 +97,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Reserve Rockets and leave them**
+- **Join Missions and leave them**
+- **Reserve Dragons and leave them**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [This project is not deploied yet.](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,76 +124,43 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
+ - Laptop/Desktop.
+ - Internet.
+ - Node.
+ - Vs Code.
 ### Setup
 
 Clone this repository to your desired folder:
+ - mkdir my-folder
+ - cd my-folder
+ - git clone [(https://github.com/SaboorSohaib/React-Group-Project.git)]
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+**you can run any one of these commands to install npm on your machine:**
 
-```sh
-  cd my-project
-  gem install
-```
---->
+- npm i
+- npm install
+- sudo apt install npm
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+- npm start.
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+- npm test.
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- Netlify
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,17 +170,24 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Abdul Saboor Sohaib**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/SaboorSohaib)
+- Twitter: [@twitterhandle](https://twitter.com/absaboorsohaib)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdul-saboor-sohaib/)
 
-👤 **Author2**
+👤 **Samuellekpor**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Samuellekpor)
+- Twitter: [@twitterhandle](https://twitter.com/samuel_lekpor)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuellekpor/)
+
+👤 **Brian Ludidi**
+
+- GitHub: [@githubhandle](https://github.com/Bludidi)
+- Twitter: [@twitterhandle](https://twitter.com/BB_Ludidi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/brian-ludidi-92754174)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,9 +197,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **It is single page application**
+- [ ] **You can see reserved rockets, dragons and missions in the myprofile page**
+- [ ] **We use API to get the rockets, misssions, and dragons.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,7 +219,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project you can fork it.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -254,7 +229,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank... <a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -264,13 +239,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **How to Join and Leave Missions?**
 
-  - [Answer_1]
+  - You can click the Join button for joining and it will chnages to leave button when you join the mission.
 
-- **[Question_2]**
+- **How to Add reserved rockets, missions and dragons to the myprofile page?**
 
-  - [Answer_2]
+  - We used some array methods to send the reserved data to myprofile page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
