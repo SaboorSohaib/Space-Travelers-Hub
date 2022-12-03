@@ -12,8 +12,8 @@ function Myprofile() {
   const rocketsToShow = ProfileRockets.map((item) => (
     <ProfileSection key={item.id} name={item.rocket_name} />
   ));
-  const { missions } = useSelector((state) => state.mission);
-  const ProfileMissions = missions.filter((item) => item.reserved === true);
+  const missionState = useSelector((state) => state.mission);
+  const ProfileMissions = missionState.filter((mission) => mission.reserved === true);
   const missionToShow = ProfileMissions.map((item) => (
     <ProfileSection key={item.id} name={item.mission_name} />
   ));
