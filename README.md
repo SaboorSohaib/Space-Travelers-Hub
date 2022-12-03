@@ -239,11 +239,11 @@ I would like to thank... <a href="https://www.flaticon.com/free-icons/planet" ti
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **How to Join and Leave Missions**
+- **How to Join and Leave Missions?**
 
   - You can click the Join button for joining and it will chnages to leave button when you join the mission.
 
-- **How to Add reserved rockets, missions and dragons to the myprofile page**
+- **How to Add reserved rockets, missions and dragons to the myprofile page?**
 
   - We used some array methods to send the reserved data to myprofile page
 
