@@ -29,9 +29,14 @@
   margin-top: 10px;
 }
 
+.profile-section-conatiner {
+  display: flex;
+  width: 100%;
+}
+
 .reserved-rockets {
-  width: 600px;
-  margin-left: 10px;
+  flex: 1;
+  margin: 10px auto;
 }
 
 .rockets-title {

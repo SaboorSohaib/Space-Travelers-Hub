@@ -41,7 +41,7 @@ function Myprofile() {
         <div className="rockets">{rocketsToShow}</div>
       </div>
 
-      <div className="reserved-dragons">
+      <div className="reserved-rockets">
         <h3 className="dragons-tit">My Dragons</h3>
         <ul className="dragons-cont">
           {dragons.filter((dragon) => dragon.reserved === true).map((dragon) => (
