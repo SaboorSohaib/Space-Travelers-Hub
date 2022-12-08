@@ -59,7 +59,7 @@ const dragonsReducer = (state = initialState, { type, payload }) => {
       return state;
   }
 };
- /* eslint func-names: ["error", "never"] */
+/* eslint func-names: ["error", "never"] */
 export function getAllDragons() {
   return async function (dispatch) {
     const allDragons = await fetchDragons();
