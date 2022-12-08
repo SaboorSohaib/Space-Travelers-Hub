@@ -11,6 +11,7 @@ function ShowRockets() {
     if (loading === 'loading') {
       dispatch(fetchRockets());
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>
