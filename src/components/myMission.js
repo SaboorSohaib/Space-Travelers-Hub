@@ -33,7 +33,7 @@ const Mission = ({
       <Col className="d-flex align-items-center justify-content-center column">
         {reserved
           ? (
-            <Alert variant="secondary" className="p-1 active_member">
+            <Alert variant="success" className="p-1 active_member">
               Active Member
             </Alert>
           )
