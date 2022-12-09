@@ -109,7 +109,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [This project is not deploied yet.](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://voluble-malabi-4602b8.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
