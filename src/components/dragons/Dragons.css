@@ -39,7 +39,7 @@
 .reserved-btn {
   padding: 5px 10px;
   color: #fff;
-  background-color: #24a0b6;
+  background-color: green;
   font-weight: 600;
   border: 0;
   border-radius: 5px;
@@ -47,9 +47,9 @@
 }
 
 .cancel-dragon-button {
-  color: #8e8e8e;
-  background-color: #fff;
-  border: #717171 2px solid;
+  color: #fff;
+  background-color: red;
+  border: none;
   border-radius: 5px;
   font-size: 20px;
   padding: 10px;
