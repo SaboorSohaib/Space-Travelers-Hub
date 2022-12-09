@@ -47,7 +47,7 @@ const Mission = ({
       <Col className="d-flex align-items-center justify-content-center">
         {reserved
           ? <Button variant="danger" className="leave_btn" onClick={() => leaveMissionHandler(missionId)}>Leave Mission</Button>
-          : <Button variant="danger" className="join_btn" onClick={() => joinMissionHandler(missionId)}>Join Mission</Button>}
+          : <Button variant="primary" className="join_btn" onClick={() => joinMissionHandler(missionId)}>Join Mission</Button>}
       </Col>
     </Row>
   );
